@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/user">
+
+    <EditText
+            android:background="@drawable/edt_location"
+            android:paddingLeft="50sp"
+            android:paddingBottom="15sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="160dp"
+            android:layout_width="307dp"
+            android:layout_height="70dp"
+            android:inputType="text"
+            android:hint="Alamat"
+            android:ems="10"
+            android:id="@+id/edtAlamat_kurir"/>
+    <EditText
+            android:background="@drawable/edt_description"
+            android:paddingLeft="50sp"
+            android:paddingBottom="140sp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="305dp"
+            android:layout_height="191dp"
+            android:inputType="text"
+            android:hint="Deskripsi"
+            android:ems="10"
+            android:id="@+id/edtDeskrip_kurir"/>
+    <EditText
+            android:background="@drawable/edt_jumlah"
+            android:paddingLeft="50sp"
+            android:paddingBottom="15sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="50dp"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:hint="Jumlah Sampah"
+            android:ems="10"
+            android:id="@+id/edtSampah_kurir"/>
+    <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="126dp"
+            android:text="Mau diambil ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textAmbil"
+            android:textSize="26sp"/>
+
+    <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+        <Button
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/btn_ambil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btn_pick"/>
+        <Button
+                android:layout_marginLeft="230dp"
+                android:background="@drawable/btn_tidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/btn_cancel"/>
+
+    </RelativeLayout>
+</LinearLayout>

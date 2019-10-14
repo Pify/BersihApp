@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:background="@drawable/user">
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    <EditText
+            android:id="@+id/edtAlamat_user"
+            android:layout_width="323dp"
+            android:layout_height="67dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="160dp"
+            android:background="@drawable/edt_location"
+            android:ems="10"
+            android:hint="Alamat"
+            android:inputType="text"
+            android:paddingLeft="50sp"
+            android:paddingBottom="15sp" />
+    <EditText
+            android:background="@drawable/edt_description"
+            android:paddingLeft="50sp"
+            android:paddingBottom="130sp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="323dp"
+            android:layout_height="178dp"
+            android:inputType="text"
+            android:hint="Deskripsi (jumlah sampah dll.)"
+            android:ems="10"
+            android:id="@+id/edtDeskrip_user"/>
+
+    <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="111dp">
+        <Button
+                android:background="@drawable/btn_rounded"
+                android:text="submit"
+                android:layout_width="wrap_content"
+                android:paddingBottom="0dp"
+                android:layout_height="42dp" android:layout_alignParentEnd="true"
+                android:layout_marginEnd="124dp" android:layout_alignParentStart="true"
+                android:layout_marginStart="124dp" android:layout_alignParentBottom="true"
+                android:layout_marginBottom="42dp" android:layout_marginTop="27dp"
+                android:layout_alignParentTop="true" android:id="@+id/btnSubmit_data"/>
+    </RelativeLayout>
+
+</LinearLayout>
