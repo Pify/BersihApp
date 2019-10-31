@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "403465757197",
+    "firebase_url": "https://pickrubbish.firebaseio.com",
+    "project_id": "pickrubbish",
+    "storage_bucket": "pickrubbish.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403465757197:android:bf9de1f215ecc051",
+        "android_client_info": {
+          "package_name": "com.myapps.pickrubbish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403465757197-apg2ko4hr8btj7h9494vkiku42cbe0b9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.myapps.pickrubbish",
+            "certificate_hash": "7db679e10d3e39906c5a387ceca9d889b102a31e"
+          }
+        },
+        {
+          "client_id": "403465757197-3fb8tsvs0765rn6reh6opm5c8mu1ubt9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7YXQiB9WoQgS_hm8G1MFerBWIUI-OuO0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403465757197-3fb8tsvs0765rn6reh6opm5c8mu1ubt9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
