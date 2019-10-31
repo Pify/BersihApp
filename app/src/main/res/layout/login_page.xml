@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:orientation="vertical"
@@ -8,89 +8,107 @@
               android:gravity="center_vertical"
               android:background="@drawable/login">
 
+
+
     <EditText
             android:id="@+id/editLogin"
-            android:layout_width="321dp"
-            android:layout_height="69dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="330dp"
+            android:layout_width="351dp"
+            android:layout_height="85dp"
+            android:layout_marginTop="328dp"
             android:background="@drawable/edt_email"
             android:ems="10"
-            android:fontFamily="@font/montserrat"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:paddingLeft="80sp"
-            android:paddingBottom="15sp" />
+            android:fontFamily="@font/montserrat"
+            android:paddingStart="60sp"
+            android:paddingBottom="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.933"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
             android:id="@+id/editPass"
-            android:layout_width="321dp"
-            android:layout_height="65dp"
-            android:layout_marginStart="20dp"
+            android:layout_width="351dp"
+            android:layout_height="85dp"
             android:background="@drawable/edt_password"
             android:ems="10"
             android:fontFamily="@font/montserrat"
             android:hint="Password"
             android:inputType="textPassword"
-            android:paddingLeft="80sp"
-            android:paddingBottom="15sp" />
+            android:paddingLeft="60sp"
+            android:paddingBottom="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/editLogin"
+            app:layout_constraintStart_toStartOf="@+id/editLogin"
+            app:layout_constraintTop_toBottomOf="@+id/editLogin" />
 
-    <RelativeLayout
-            android:orientation="horizontal"
-            android:gravity="center_horizontal"
-            android:layout_width="401dp"
-            android:layout_height="165dp" android:layout_marginRight="25dp">
+    <Button
+            android:id="@+id/sign_in"
+            android:layout_width="331dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="Login"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="@+id/editPass"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="@+id/editPass"
+            app:layout_constraintTop_toBottomOf="@+id/editPass" />
 
-        <Button
-                android:id="@+id/sign_in"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="70dp"
-                android:layout_marginTop="35dp"
-                android:layout_marginEnd="112dp"
-                android:layout_marginBottom="90dp"
-                android:background="@drawable/btn_rounded"
-                android:fontFamily="@font/montserrat"
-                android:paddingBottom="10dp"
-                android:text="Login"
-                android:textAllCaps="false"
-                android:textColor="#85070707"
-                android:textSize="20sp" />
 
-        <TextView
-                android:id="@+id/txtDaftar"
-                android:layout_width="181dp"
-                android:layout_height="17dp"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="117dp"
-                android:layout_marginTop="111dp"
-                android:layout_marginEnd="133dp"
-                android:layout_marginBottom="37dp"
-                android:fontFamily="@font/montserrat"
-                android:text="Belum punya akun ? Daftar"
-                android:textAlignment="textStart" />
+    <TextView
+            android:id="@+id/txtLoginAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="24dp"
+            android:text="Masuk sebagai admin"
+            android:fontFamily="@font/montserrat"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintEnd_toEndOf="@+id/sign_in"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="@+id/sign_in"
+            app:layout_constraintTop_toBottomOf="@+id/sign_in" />
 
-        <TextView
-                android:id="@+id/txtLoginAdmin"
-                android:layout_width="182dp"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@+id/txtDaftar"
-                android:layout_alignEnd="@+id/txtDaftar"
-                android:layout_alignParentBottom="true"
-                android:layout_marginStart="-27dp"
-                android:layout_marginEnd="-3dp"
-                android:layout_marginBottom="-1dp"
-                android:fontFamily="@font/montserrat"
-                android:text="Login sebagai admin"
-                android:textAlignment="center" />
-    </RelativeLayout>
+    <TextView
+            android:id="@+id/txtDaftar"
+            android:layout_width="wrap_content"
+            android:layout_height="19dp"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:text="Register"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/sign_in"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/sign_in"
+            app:layout_constraintTop_toBottomOf="@+id/txtLoginAdmin"
+            app:layout_constraintVertical_bias="0.018" />
 
-</LinearLayout>
+    <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_bersih" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

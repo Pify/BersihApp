@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@drawable/user"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_welcome2">
 
     <ImageView
-            android:layout_width="303dp"
-            android:layout_height="wrap_content" app:srcCompat="@drawable/welcome_page" android:id="@+id/imageView"
-            android:layout_alignParentBottom="true" android:layout_marginBottom="372dp"
-            android:layout_alignParentEnd="true" android:layout_marginEnd="54dp" android:layout_alignParentStart="true"
-            android:layout_marginStart="54dp" android:layout_marginTop="163dp" android:layout_alignParentTop="true"/>
+            android:id="@+id/imageView"
+            android:layout_width="362dp"
+            android:layout_height="266dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="131dp"
+            android:layout_marginEnd="27dp"
+            android:layout_marginBottom="334dp"
+            app:srcCompat="@drawable/welcome_page" />
 
     <TextView
             android:id="@+id/textView2"
@@ -37,6 +45,9 @@
             android:layout_marginStart="73dp"
             android:layout_marginEnd="75dp"
             android:layout_marginBottom="48dp"
+            android:fontFamily="@font/montserrat"
+            android:text="asdwd"
+            android:textAlignment="center"
             android:textSize="30sp" />
 
     <Button
@@ -49,11 +60,10 @@
             android:layout_marginStart="117dp"
             android:layout_marginEnd="113dp"
             android:layout_marginBottom="109dp"
-            android:background="@drawable/btn_rounded"
-            android:paddingBottom="10dp"
+            android:background="@drawable/rounded_button"
+            android:fontFamily="@font/montserrat_bold"
             android:text="Lanjut"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"/>
+            android:textColor="@android:color/white" />
 
     <Button
             android:id="@+id/btnLogout"
