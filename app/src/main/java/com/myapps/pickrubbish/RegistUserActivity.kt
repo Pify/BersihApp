@@ -61,7 +61,7 @@ class RegistUserActivity : AppCompatActivity() {
     private fun saveUserDatabase(email : String) {
         val uid = FirebaseAuth.getInstance().uid ?: ""
         val ref = FirebaseDatabase.getInstance().getReference("users/$uid")
-//tes
+//tess
         val user = User(
             uid,
             editNm.text.toString(),
