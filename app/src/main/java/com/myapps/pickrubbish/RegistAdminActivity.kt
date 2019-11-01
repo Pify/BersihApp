@@ -29,7 +29,7 @@ class RegistAdminActivity : AppCompatActivity() {
                         if(!it.isSuccessful) {
                             return@addOnCompleteListener
                         } else {
-                            Toast.makeText(this, "Register berhasil >:D", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this, "Register berhasil", Toast.LENGTH_SHORT).show()
                             Log.d("admin", "Successfully created user with uid: ${it.result}")
                         }
                     }

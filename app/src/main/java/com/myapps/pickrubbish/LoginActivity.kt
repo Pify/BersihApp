@@ -6,7 +6,6 @@ import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
-import com.oldlex.whatsappclone.RegistUserActivity
 import kotlinx.android.synthetic.main.login_page.*
 
 class LoginActivity : AppCompatActivity() {
